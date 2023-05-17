@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Website Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static\style.css">
+</head>
+<body>
+    <main>
+        <section id="target" class="glass">
+            <div class="heading">
+                <h1>Enter Details:</h1>
+            </div>
+            <div class="content">
+                <form>
+                    <div class="questions">
+                        <caption><p>Number of seats in the bus:</p></caption>
+                        <input type="number">
+                    </div>
+                    <div class="questions">
+                        <caption><p>Total number of students to travel:</p></caption>
+                        <input type="number" >
+                    </div>
+                    <div class="questions">
+                        <caption><p>Number of students above the age of 6:</p></caption>
+                        <input type="number">
+                    </div>
+                </form>
+                <button>
+                    Calculate
+                </button>
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="static/vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".glass"), {
+		max: 25,
+		speed: 400,
+        glare: true,
+        "max-glare": 0.5
+	});
+    </script>
+</body>
+</html>
